@@ -10,10 +10,13 @@ body {
   padding: 0;
   max-width: 1920px;
   background-color: var(--dark-cyan);
-  background-image: url(images/bg-pattern-top.svg),
-    url(images/bg-pattern-bottom.svg);
-  background-position: left top, right bottom;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-size: auto, auto;
   background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: calc(50% + -27rem) calc(50% + -27rem),
+    calc(50% - -28rem) calc(50% - -32.6rem);
   overflow-x: hidden;
   font-family: "Kumbh Sans";
 }
