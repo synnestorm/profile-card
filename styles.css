@@ -1,0 +1,131 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --dark-blue-gray: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  background-color: var(--dark-cyan);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  overflow-x: hidden;
+  font-family: "Kumbh Sans";
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+img.card-bg {
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-info {
+  background-color: white;
+  width: 350px;
+  height: 300px;
+  position: relative;
+  top: -10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+img.profile {
+  border-radius: 50%;
+  border: 5px solid white;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -50px;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  top: -45px;
+  color: var(--dark-blue);
+  font-size: 25px;
+}
+
+span.age {
+  font-weight: 300;
+  font-size: 22px;
+  position: relative;
+  left: 5px;
+}
+
+p.place {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--dark-gray);
+  position: relative;
+  top: -50px;
+}
+
+hr {
+  color: var(--dark-gray);
+  position: relative;
+  top: -30px;
+}
+
+div.card-stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+h2 {
+  color: var(--dark-blue);
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+span.card-stat {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: var(--dark-gray);
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1000px) {
+  section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+}
